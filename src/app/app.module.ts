@@ -10,13 +10,16 @@ import { HomeComponent } from './home/home.component';
 import { AngularMaterialModule} from './angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { ContactComponent } from './contact/contact.component';
+import {MatDialogModule } from '@angular/material/dialog'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     AngularMaterialModule,
     FlexLayoutModule,
     MatCarouselModule,
+    MatDialogModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

@@ -2,8 +2,9 @@
 
     <section class="home" id='home'>
         <div class='bg-video'>
-            <video class='video-content' autoplay loop preload='auto'>
+            <video class='video-content' autoplay muted loop>
                 <source src='../../assets/videos/VID-20210215-WA0008.mp4' type='video/mp4'>
+
             </video>
         </div>
 
@@ -11,20 +12,24 @@
             <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
 
                 <img src='../../assets/business-logo.png' alt='logo'>
-                <h2 class='business-title'>UNCHARTED</h2>
+                <h2 class='business-title'>unCHARTED</h2>
 
             </div>
             <div class='nav-items'>
 
 
-                <a href='#home' mat-button>HOME</a>
-                <a href='#about' mat-button>ABOUT US</a>
-                <a href='#materials' mat-button>MATERIAL</a>
-                <a href='#collections' mat-button>COLLECTIONS</a>
-                <a href='#work' mat-button>WORK</a>
-                <a href='#contact' mat-button>CONTACT</a>
+                <a href='#home' mat-button>home</a>
+                <a href='#about' mat-button> about us</a>
+                <a href='#materials' mat-button>material</a>
+                <a href='#work' mat-button>work</a>
+                <a href='#pro' mat-button>pro</a>
+                <a href='#contact' mat-button>contact</a>
 
             </div>
+        </div>
+
+        <div class="pop-up--logo">
+            <img src='../../assets/business-logo.png' class='onload-image'>
         </div>
 
     </section>
@@ -67,30 +72,38 @@
         <div class="material-container">
             <div class="material-container--title" fxLayout='row' fxLayoutAlign='center center'>
                 <h1 class="material-container--title__text">
-                    MATERIALS
+                    materials
                 </h1>
             </div>
-            <!-- <div class="material-container--carousel">
-                <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="primary" maxWidth="800px"
+            <div class="material-container--carousel">
+                <div class="material-carousel">
+                <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249" maxWidth="800px"
                     slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5" [loop]="true"
                     [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
                     orientation="ltr">
                     <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
                         [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
                 </mat-carousel>
-            </div> -->
+            </div>
+            <div class="material-carousel--text">
+                <h1 class="material-carousel--text" fxLayout='row' fxLayoutAlign='center center'>
+                    egg shell
+                </h1>
+
+            </div>
+            </div>
         </div>
     </section>
 
-    <section class="collections" id='collections'>
-        <div class="collections-container">
+    <section class="pro" id='pro'>
+        <div class="pro-container">
 
-            <div class="collections-container--title" fxLayout='row' fxLayoutAlign='center center'>
-                <h1 class="collections-container--title__text">
+            <div class="pro-container--title" fxLayout='row' fxLayoutAlign='center center'>
+                <h1 class="pro-container--title__text">
                     antiques of the future
                 </h1>
             </div>
-        <!-- <div class="collections-container--carousel">
+        <!-- <div class="pro-container--carousel">
             <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary" maxWidth="800px"
                 slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5" [loop]="true"
                 [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
@@ -105,7 +118,7 @@
         <div class="work-container">
             <div class="work-container--title" fxLayout='row' fxLayoutAlign='center center'>
                 <h1 class="work-container--title__text">
-                    WORK
+                    work
                 </h1>
             </div>
             <!-- <div class="work-container--carousel">
@@ -121,7 +134,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact-container" fxLayout='column' fxLayoutAlign='space-around center'>
+        <div class="contact-container" fxLayout='column' fxLayoutAlign='end center'>
 
             <div class="contact-container--title">
                 <h1 class="contact-container--title__text">CONTaCT</h1>
@@ -132,21 +145,25 @@
 
             </div>
 
-            <button mat-raised-button color="primary" class='contact-button' >GET IN TOUCH</button>
+            <button mat-raised-button color="primary"
+
+             matRipple matRippleCentered matRippleColor='#896249'
+             matRippleRadius ='1200'
+             class='contact-button' (click)="openContact()" >GET IN TOUCH</button>
 
 
         </div>
     </section>
 
-    <footer fxLayout='row' fxLayoutAlign='space-evenly center'>
-        <div class="footer-container">
+    <footer fxLayout='row' fxLayoutAlign='start center'>
+        <div class="footer-container" fxFlexOffset='25'>
             <div class="footer-logo" fxLayout='column' fxLayoutAlign='space-around center' fxFlex='30'>
 
                 <div class="footer-logo--image"> <img src='../../assets/footer-logo.png'>
                 </div>
 
                 <div class="footer-logo--text" fxLayout='column' fxLayoutAlign='center center'>
-                    <h2 class='business-title'>UNCHARTED</h2>
+                    <h2 class='business-title'>unCHarted</h2>
                     <h2 class='footer-business--subtitle'>ACCESS TO INDIVIDUALITY</h2>
                 </div>
 
@@ -155,14 +172,14 @@
 
         </div>
 
-        <img class="divider-line" src='../../assets/divider.png' alt='divider' fxFlexOffset='-10'>
-        <div class="footer-items" fxLayout='column' fxLayoutAlign='space-evenly center' >
-            <a href='#home' mat-button>HOME</a>
-            <a href='#about' mat-button>ABOUT US</a>
-            <a href='#materials' mat-button>MATERIAL</a>
-            <a href='#collections' mat-button>COLLECTIONS</a>
-            <a href='#work' mat-button>WORK</a>
-            <a href='#contact' mat-button>CONTACT</a>
+        <img class="divider-line" src='../../assets/divider.png' alt='divider'>
+        <div class="footer-items" fxLayout='column' fxLayoutAlign='space-evenly center' fxFlex='30'>
+            <a href='#home' mat-button>home</a>
+            <a href='#about' mat-button> about us</a>
+            <a href='#materials' mat-button>matrial</a>
+            <a href='#work' mat-button>work</a>
+            <a href='#pro' mat-button>pro</a>
+            <a href='#contact' mat-button>contact</a>
         </div>
         <img class="divider-line" src='../../assets/divider.png' alt='divider' >
 

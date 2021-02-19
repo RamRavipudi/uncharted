@@ -4,8 +4,9 @@
 }
 .container {
   overflow-x: hidden;
-  background: #F9F5EC;
-  opacity:0.9;  
+  background: #f9f5ec;
+  opacity: 0.9;
+  margin-left: -30px;
 }
 
 .bg-video {
@@ -15,7 +16,6 @@
   top: 0;
   left: 0;
   height: 1600px;
-  
 }
 video {
   width: 100%;
@@ -40,17 +40,22 @@ video {
 .business-logo {
   // margin-top: 8px;
 }
+.pop-up--logo {
+  margin-left: 1200px;
+  color: #896249;
+}
 .about-container {
-  margin-top: 600px;
+  margin-top: 530px;
   position: relative;
   height: 1000px;
   // margin-left: -320px;
   transform: translate(-200px, 0px);
 }
 .about {
-  background-image: url(../../assets/lines-bg1.png);
+  background-image: url(../../assets/lines-bg2.png);
   background-repeat: no-repeat;
   transform: translate(0px, 148px);
+  background-size: contain;
 }
 .background-card {
   background: #896249;
@@ -84,6 +89,7 @@ video {
 }
 .about-text--underline {
   width: 100%;
+  // visibility: hidden;
 }
 .about-text--heading {
   padding-bottom: 10px;
@@ -114,13 +120,31 @@ video {
   font-size: 120px;
   color: #896249;
 }
+.material-container--carousel {
+  width: 100%;
+  height: 640px;
+  background: #896249;
+}
+.material-carousel {
+  margin: 0px 480px 0px 480px;
+}
+.material-carousel--text {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29.882px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #f1eae2;
+}
 .mat-carousel-slide {
   margin-top: 200px;
 }
-.collections {
+.pro {
   height: 1000px;
 }
-.collections-container--title__text {
+.pro-container--title__text {
   font-family: "North Carossela";
   font-size: 120px;
   color: #896249;
@@ -134,12 +158,17 @@ video {
   color: #896249;
 }
 .contact {
-  height: 360px;
+  height: 1000px;
+  background: url(../../assets/contact-lines.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -300px;
 }
 .contact-container--title__text {
   font-family: "North Carossela";
   font-size: 100px;
   color: #896249;
+  margin-top: 640px;
 }
 .contact-button {
   width: 440px;
@@ -155,7 +184,8 @@ video {
   text-align: center;
   // transform:translate(0px 76px);
   color: #f7f6ef;
-  margin-top:76px;
+  margin-top: 76px;
+  background: #896249;
 }
 footer {
   background-color: #896249;
