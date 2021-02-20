@@ -97,7 +97,7 @@ video {
   font-size: 120px;
   color: #896249;
 }
-.about-button {
+.about-button{
   font-size: 14px;
   height: 52px;
   width: 148px;
@@ -111,7 +111,7 @@ video {
 }
 
 .materials {
-  height: 1000px;
+  height: 700px;
   width: 100%;
   transform: translate(30px, 220px);
 }
@@ -120,13 +120,24 @@ video {
   font-size: 120px;
   color: #896249;
 }
+
+.material-main--container{
+  background: #896249;
+  
+  background-position: translateY(-40px);
+  background-repeat: no-repeat;
+
+}
 .material-container--carousel {
   width: 100%;
-  height: 640px;
-  background: #896249;
+  height: 500px;
+  margin-top:60px;
+  opacity: 0.9;
 }
 .material-carousel {
-  margin: 0px 480px 0px 480px;
+  margin: 60px 480px 0px 480px;
+  background: url(../../assets/mat-right.png);
+  // background: url(../../assets/mat-left.png);
 }
 .material-carousel--text {
   font-family: North Carossela;
@@ -142,7 +153,17 @@ video {
   margin-top: 200px;
 }
 .pro {
-  height: 1000px;
+  height: 900px;
+}
+.pro-container{
+  transform:translateY(420px);
+  background:url(../../assets/antique-lines.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pro-carousel{
+  margin: 60px 480px 0px 480px;
+
 }
 .pro-container--title__text {
   font-family: "North Carossela";
@@ -150,11 +171,31 @@ video {
   color: #896249;
 }
 .work {
-  height: 1000px;
+  height: 700px;
+}
+.work-container{
+  transform:translateY(400px);
 }
 .work-container--title__text {
   font-family: "North Carossela";
   font-size: 120px;
+  color: #896249;
+}
+.work-carousel {
+  margin: 60px 480px 0px 480px;
+}
+
+.work-button {
+  transform:translateY(480px);
+  font-size: 14px;
+  height: 52px;
+  width: 148px;
+  font-family: Larken-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17.288px;
+  line-height: 22px;
+  border: 1px solid #9a673d;
   color: #896249;
 }
 .contact {
@@ -199,7 +240,7 @@ a {
   line-height: 24px;
   text-align: center;
 
-  color: #ffffff;
+  color: #fff;
 }
 .footer-business--subtitle {
   font-family: North Carossela;

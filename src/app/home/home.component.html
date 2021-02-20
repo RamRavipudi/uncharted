@@ -2,7 +2,7 @@
 
     <section class="home" id='home'>
         <div class='bg-video'>
-            <video class='video-content' autoplay muted loop>
+            <video class='video-content' autoplay muted loop preload="auto">
                 <source src='../../assets/videos/VID-20210215-WA0008.mp4' type='video/mp4'>
 
             </video>
@@ -28,9 +28,9 @@
             </div>
         </div>
 
-        <div class="pop-up--logo">
+        <!-- <div class="pop-up--logo">
             <img src='../../assets/business-logo.png' class='onload-image'>
-        </div>
+        </div> -->
 
     </section>
 
@@ -75,22 +75,25 @@
                     materials
                 </h1>
             </div>
-            <div class="material-container--carousel">
-                <div class="material-carousel">
-                <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249" maxWidth="800px"
-                    slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5" [loop]="true"
-                    [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
-                    orientation="ltr">
-                    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
-                        [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
-                </mat-carousel>
-            </div>
-            <div class="material-carousel--text">
-                <h1 class="material-carousel--text" fxLayout='row' fxLayoutAlign='center center'>
-                    egg shell
-                </h1>
+            <div class="material-main--container">
+                <div class="material-container--carousel">
+                    <div class="material-carousel">
+                        <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249"
+                            maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
+                            [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
+                            [useMouseWheel]="false" orientation="ltr">
+                            <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
+                                [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false">
+                            </mat-carousel-slide>
+                        </mat-carousel>
+                    </div>
+                    <div class="material-carousel--text">
+                        <h1 class="material-carousel--text" fxLayout='row' fxLayoutAlign='center center'>
+                            egg shell
+                        </h1>
 
-            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -103,34 +106,48 @@
                     antiques of the future
                 </h1>
             </div>
-        <!-- <div class="pro-container--carousel">
-            <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary" maxWidth="800px"
-                slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5" [loop]="true"
-                [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
-                orientation="ltr">
-                <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image"
-                    overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
-            </mat-carousel>
-        </div> -->
+            <div class="pro-container--carousel">
+
+                <div class="pro-carousel">
+                    <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary"
+                        maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
+                        [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true"
+                        [useMouseWheel]="false" orientation="ltr">
+                        <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
+                            [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+                    </mat-carousel>
+                </div>
+            </div>
         </div>
     </section>
     <section class="work" id="work">
         <div class="work-container">
             <div class="work-container--title" fxLayout='row' fxLayoutAlign='center center'>
                 <h1 class="work-container--title__text">
-                    work
+                    projects
                 </h1>
             </div>
-            <!-- <div class="work-container--carousel">
-                <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary"
-                    maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
-                    [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
-                    [useMouseWheel]="false" orientation="ltr">
-                    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
-                        [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
-                </mat-carousel>
-            </div> -->
+            <div class="work-container--carousel">
+                <div class='work-carousel'>
+                    <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary"
+                        maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
+                        [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
+                        [useMouseWheel]="false" orientation="ltr">
+                        <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
+                            [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+                    </mat-carousel>
+                </div>
+            </div>
+            <!-- 
+            <button class='work-button' mat-stroked-button color="primary"  fxLayout='couumn' fxLayoutAlign='center center'>Discover
+                More</button> -->
         </div>
+        <div class="work-discover" fxLayout='row' fxLayoutAlign='center center'>
+            <button class='work-button' mat-stroked-button color="primary">Discover
+                More</button>
+        </div>
+
+
     </section>
 
     <section class="contact" id="contact">
@@ -145,11 +162,8 @@
 
             </div>
 
-            <button mat-raised-button color="primary"
-
-             matRipple matRippleCentered matRippleColor='#896249'
-             matRippleRadius ='1200'
-             class='contact-button' (click)="openContact()" >GET IN TOUCH</button>
+            <button mat-raised-button color="primary" matRipple matRippleCentered matRippleColor='#896249'
+                matRippleRadius='1200' class='contact-button' (click)="openContact()">GET IN TOUCH</button>
 
 
         </div>
@@ -181,7 +195,7 @@
             <a href='#pro' mat-button>pro</a>
             <a href='#contact' mat-button>contact</a>
         </div>
-        <img class="divider-line" src='../../assets/divider.png' alt='divider' >
+        <img class="divider-line" src='../../assets/divider.png' alt='divider'>
 
     </footer>
 </div>

@@ -47,49 +47,49 @@ export class HomeComponent implements OnInit {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.to('.onload-image', {
-      scrollTrigger: {
+    // gsap.to('.onload-image', {
+    //   scrollTrigger: {
 
-        trigger: '.onload-image',
-        toggleActions: 'restart resume restart pause',
-        onEnter: () => { gsap.set('.onload-image', { opacity: 1 }) },
+    //     trigger: '.onload-image',
+    //     toggleActions: 'restart resume restart pause',
+    //     onEnter: () => { gsap.set('.onload-image', { opacity: 1 }) },
 
-        onLeave: () => { gsap.set('.onload-image', { opacity: 0 }) }
+    //     onLeave: () => { gsap.set('.onload-image', { opacity: 0 }) }
 
-      },
-      y: 200,
-      x: -400,
-      scale: 14,
-      duration: 4,
-      ease: 'sine',
-      opacity: 0,
-      color: '#896249'
+    //   },
+    //   y: 200,
+    //   x: -400,
+    //   scale: 14,
+    //   duration: 2,
+    //   ease: 'sine',
+    //   opacity: 0,
+    //   color: '#896249'
 
-    });
+    // });
+
+    // about animation
 
     gsap.from('.image-card', {
 
       scrollTrigger: {
         trigger: '.image-card',
         // markers:true,
-        toggleActions: 'restart resume restart resume'
+        toggleActions: 'restart resume none resume'
 
       },
       y: 100,
-      duration: 3,
+      duration: 2,
       ease: 'slow',
-      opacity: 0
     });
 
     gsap.from('.background-card', {
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart resume restart resume'
+        toggleActions: 'restart resume none resume'
       },
       y: 200,
-      duration: 3,
+      duration: 2,
       ease: 'slow',
-      opacity: 0
       // scrub:true,
       // pin:'.about-container',
       // pinSpacing:false
@@ -99,11 +99,11 @@ export class HomeComponent implements OnInit {
     gsap.from('.about-text', {
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart resume restart resume',
+        toggleActions: 'restart resume none resume',
         // markers:true,
       },
       y: 50,
-      duration: 3,
+      duration: 2,
       opacity: 0,
       ease: 'slow',
       // scrub:true,
@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit {
     let underline = gsap.timeline({
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart pause restart resume',
+        toggleActions: 'restart pause none resume',
 
       }
     });
@@ -126,7 +126,7 @@ export class HomeComponent implements OnInit {
       }, {
       width: "100%",
       left: "100%",
-      duration: 4,
+      duration: 2,
       immediateRender: false
     })
 
@@ -158,18 +158,73 @@ export class HomeComponent implements OnInit {
     gsap.from('.about-button', {
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart pause restart resume',
+        toggleActions: 'restart pause none resume',
         // markers:true,
         // scrub:true,
         // pin:true,
       },
       y: 100,
-      duration: 4,
-      ease: 'sine',
+      duration: 2,
+      ease: 'slow',
       stagger: 1,
       opacity: 0,
       delay: 2,
     });
+
+
+    // contact animation
+
+    gsap.from('section',{ 
+      scrollTrigger: {
+        trigger: '.container',
+        toggleActions: 'restart pause none resume',
+        // markers:true,
+        // scrub:true,
+        // pin:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      stagger: 1,
+      delay: 2,
+
+    });
+
+
+    gsap.from('.contact-button', {
+      scrollTrigger: {
+        trigger: '.contact-button',
+        toggleActions: 'restart pause none resume',
+        // markers:true,
+        // scrub:true,
+        // pin:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      stagger: 1,
+      delay: 2,
+    });
+
+
+    // work Animations
+
+
+    gsap.from('.work-button', {
+      scrollTrigger: {
+        trigger: '.work-button',
+        toggleActions: 'restart pause none resume',
+        // markers:true,
+        // scrub:true,
+        // pin:true,
+      },
+      y: 600,
+      duration: 2,
+      ease: 'slow',
+      stagger: 1,
+      delay: 2,
+    });
+
 
 
   }
