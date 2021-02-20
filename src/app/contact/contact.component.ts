@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +6,8 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+
+  panelOpenState=false;
 
   constructor() { }
 

@@ -7,11 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
-import { AngularMaterialModule} from './angular-material.module';
+import { AngularMaterialModule } from '../app/angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ContactComponent } from './contact/contact.component';
-import {MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -29,6 +30,7 @@ import {MatDialogModule } from '@angular/material/dialog'
     FlexLayoutModule,
     MatCarouselModule,
     MatDialogModule,
+    RouterModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

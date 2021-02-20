@@ -1,4 +1,25 @@
 <div class='container'>
+    <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center' fxHide.lt-md='true'>
+        <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
+
+            <img src='../../assets/business-logo.png' alt='logo'>
+            <h2 class='business-title'>unCHARTED</h2>
+
+        </div>
+        <div class='nav-items'>
+
+
+            <a href='#home' mat-button>home</a>
+            <a href='#about' mat-button> about us</a>
+            <a href='#materials' mat-button>material</a>
+            <a href='#work' mat-button>work</a>
+            <a href='#pro' mat-button>pro</a>
+            <a href='#contact' mat-button>contact</a>
+
+        </div>
+    </div>
+
+
 
     <section class="home" id='home'>
         <div class='bg-video'>
@@ -8,25 +29,7 @@
             </video>
         </div>
 
-        <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center'>
-            <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
 
-                <img src='../../assets/business-logo.png' alt='logo'>
-                <h2 class='business-title'>unCHARTED</h2>
-
-            </div>
-            <div class='nav-items'>
-
-
-                <a href='#home' mat-button>home</a>
-                <a href='#about' mat-button> about us</a>
-                <a href='#materials' mat-button>material</a>
-                <a href='#work' mat-button>work</a>
-                <a href='#pro' mat-button>pro</a>
-                <a href='#contact' mat-button>contact</a>
-
-            </div>
-        </div>
 
         <!-- <div class="pop-up--logo">
             <img src='../../assets/business-logo.png' class='onload-image'>
@@ -36,8 +39,8 @@
 
 
     <section class="about" id='about'>
-        <div class="about-container" fxLayout='row' fxLayoutAlign='center center'>
-            <div class="about-illustration" fxLayout='row' fxLayoutAlign='center center' fxFlex='50'>
+        <div class="about-container" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column-reverse' fxLayoutAlign.lt-md='center center' fxLayout.lt-sm='column-reverse' fxLayoutAlign.lt-sm='center start'>
+            <div class="about-illustration" fxLayout='row' fxLayoutAlign='center center' fxFlex='50' fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='center center'>
 
 
                 <mat-card class='background-card'></mat-card>
@@ -52,7 +55,7 @@
                     <img class='about-text--underline' src='../../assets/Line 2.png'>
                 </div>
 
-                <div class="about-text-paragraph">
+                <div class="about-text-paragraph" fxLayout.lt-sm='row' fxLayoutAlign.lt-sm='start center'>
                     <p class="about-text-paragraph">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Deleniti saepe tempora incidunt eius,
@@ -74,6 +77,8 @@
                 <h1 class="material-container--title__text">
                     materials
                 </h1>
+                <img class='material-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
+
             </div>
             <div class="material-main--container">
                 <div class="material-container--carousel">
@@ -105,10 +110,13 @@
                 <h1 class="pro-container--title__text">
                     antiques of the future
                 </h1>
+                <img class='pro-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
             </div>
             <div class="pro-container--carousel">
 
-                <div class="pro-carousel">
+                <!-- <div class="pro-carousel">
+                    
+
                     <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary"
                         maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
                         [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true"
@@ -116,8 +124,26 @@
                         <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
                             [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
                     </mat-carousel>
+                </div> -->
+            </div>
+            <div class="antique-image--container" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap='24px'>
+                <div class="antique-leftImage" fxLayout='column' fxLayoutAlign='space-between center' fxLayoutGap='24px' >
+                    <img class='antique-left--image' src='../../assets/antique-left.png'>
+                    <img class='antique-underline' src='../../assets/line1.png'>
+                    <h4 class="antque-left--text" fxLayout='column' fxLayoutAlign='center center'>
+                        This modern take on the classic empire style Selenite Chandelier. The look has the allure of restoration era luxury for interiors ranging from industrial to glamorous.
+
+                    </h4>
+                </div>
+
+                <div class='antique-rightImage' >
+                    <img class='antique-right--image' src='../../assets/antique-right.png'>
+                    <h3 class="antique-right--text" fxLayout='row' fxLayoutAlign='center center'>
+                        Selenite Chandeliers
+                    </h3>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="work" id="work">
@@ -126,15 +152,17 @@
                 <h1 class="work-container--title__text">
                     projects
                 </h1>
+                <img class='work-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
             </div>
             <div class="work-container--carousel">
                 <div class='work-carousel'>
-                    <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="primary"
+                    <mat-carousel timings="1000ms ease-in" [autoplay]="true" interval="4000" color="#896249"
                         maxWidth="800px" slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
                         [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
                         [useMouseWheel]="false" orientation="ltr">
-                        <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
-                            [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+                        <mat-carousel-slide #matCarouselSlide *ngFor="let workslide of workslides; let i = index"
+                            [image]="workslide.image" overlayColor="#00000040" [hideOverlay]="true">
+                        </mat-carousel-slide>
                     </mat-carousel>
                 </div>
             </div>
@@ -151,10 +179,11 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact-container" fxLayout='column' fxLayoutAlign='end center'>
+        <div class="contact-container" fxLayout='column' fxLayoutAlign='end center' fxLayout.lt-sm='column' fxLayout.lt-sm='center center'>
 
             <div class="contact-container--title">
                 <h1 class="contact-container--title__text">CONTaCT</h1>
+                <img class='contact-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
                 <!-- <h4 class="contact-container--subtitle">
                     connect with us
                 </h4> -->
@@ -169,15 +198,17 @@
         </div>
     </section>
 
-    <footer fxLayout='row' fxLayoutAlign='start center'>
-        <div class="footer-container" fxFlexOffset='25'>
-            <div class="footer-logo" fxLayout='column' fxLayoutAlign='space-around center' fxFlex='30'>
+    <footer fxLayout='row' fxLayoutAlign='start center' fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='start center' fxLayoutGap.lt-sm='12px' >
+        <div class="footer-container" fxFlexOffset='15' >
+            <div class="footer-logo" fxLayout='column' fxLayoutAlign='space-around center' fxFlex='30' fxLayout.lt-sm='row' fxLayoutAlign.lt-sm='start center'>
 
-                <div class="footer-logo--image"> <img src='../../assets/footer-logo.png'>
+                <div class="footer-logo--image"> <img class='business-logo' src='../../assets/footer-logo.png' fxHide.lt-md='true'>
                 </div>
 
                 <div class="footer-logo--text" fxLayout='column' fxLayoutAlign='center center'>
-                    <h2 class='business-title'>unCHarted</h2>
+                    <h2 class='business-title' fxHide.lt-md='true'>unCHarted</h2>
+
+                    <img src='../../assets/footer-Mlogo.png' fxHide='true' fxShow.lt-md='true'>
                     <h2 class='footer-business--subtitle'>ACCESS TO INDIVIDUALITY</h2>
                 </div>
 
@@ -186,8 +217,8 @@
 
         </div>
 
-        <img class="divider-line" src='../../assets/divider.png' alt='divider'>
-        <div class="footer-items" fxLayout='column' fxLayoutAlign='space-evenly center' fxFlex='30'>
+        <img class="divider-line" src='../../assets/divider.png' alt='divider' fxHide.lt-md='true' >
+        <div class="footer-items" fxLayout='column' fxLayoutAlign='space-evenly center' fxFlex='40'>
             <a href='#home' mat-button>home</a>
             <a href='#about' mat-button> about us</a>
             <a href='#materials' mat-button>matrial</a>
@@ -195,7 +226,7 @@
             <a href='#pro' mat-button>pro</a>
             <a href='#contact' mat-button>contact</a>
         </div>
-        <img class="divider-line" src='../../assets/divider.png' alt='divider'>
+        <img class="divider-line" src='../../assets/divider.png' alt='divider' fxHide.lt-md='true'>
 
     </footer>
 </div>

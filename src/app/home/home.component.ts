@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
 import { gsap } from "gsap";
 import Draggable from "gsap/Draggable";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MatDialog } from '@angular/material/dialog'
-import { ContactComponent } from '../contact/contact.component';
+import { Router } from '@angular/router';
 
 
 
@@ -15,15 +14,16 @@ import { ContactComponent } from '../contact/contact.component';
 })
 export class HomeComponent implements OnInit {
 
-  slides = [{ 'image': '../../assets/material-image.png' }, { 'image': '../../assets/download.jpeg' }, { 'image': '../../assets/material-image.png' }, { 'image': '../../assets/images.jpeg' }]
+  slides = [{ 'image': '../../assets/material/material-image.png' }, { 'image': '../../assets/material/projects-2.jpg' }, { 'image': '../../assets/material/projects-3.jpg' }, { 'image': '../../assets/material/projects.jpg' }]
 
-  constructor(public dialog: MatDialog) { }
+  workslides = [{ 'image': '../../assets/projects/fendi.jpg' }, { 'image': '../../assets/projects/hyatt.jpg' }, { 'image': '../../assets/projects/mandrain.jpg' }, { 'image': '../../assets/projects/munich.jpg' }]
+  constructor(public dialog: MatDialog, public router: Router) { }
 
   scroll: any;
 
   openContact() {
     setTimeout(() => {
-      this.dialog.open(ContactComponent);
+      this.router.navigate(['/contact']);
 
     }, 200);
 
@@ -104,7 +104,6 @@ export class HomeComponent implements OnInit {
       },
       y: 50,
       duration: 2,
-      opacity: 0,
       ease: 'slow',
       // scrub:true,
       // pin:true
@@ -124,7 +123,7 @@ export class HomeComponent implements OnInit {
         width: "0%",
         left: "0%",
       }, {
-      width: "100%",
+      width: "80%",
       left: "100%",
       duration: 2,
       immediateRender: false
@@ -167,26 +166,24 @@ export class HomeComponent implements OnInit {
       duration: 2,
       ease: 'slow',
       stagger: 1,
-      opacity: 0,
       delay: 2,
     });
 
 
     // contact animation
 
-    gsap.from('section',{ 
+    gsap.from('mat-carousel', {
       scrollTrigger: {
-        trigger: '.container',
+        trigger: 'section',
         toggleActions: 'restart pause none resume',
         // markers:true,
         // scrub:true,
         // pin:true,
       },
-      y: 100,
-      duration: 2,
+      y: 300,
+      duration: 4,
       ease: 'slow',
-      stagger: 1,
-      delay: 2,
+
 
     });
 
@@ -226,6 +223,80 @@ export class HomeComponent implements OnInit {
     });
 
 
+    // anique animations
+
+    gsap.from('.antique-left--image', {
+
+      scrollTrigger: {
+        trigger: '.antique-left--image',
+        // markers:true,
+        toggleActions: 'restart resume none resume'
+
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+    });
+
+    gsap.from('.antique-right--image', {
+      scrollTrigger: {
+        trigger: '.antique-right--image',
+        toggleActions: 'restart resume none resume'
+      },
+      y: 200,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:'.about-container',
+      // pinSpacing:false
+    });
+
+
+    gsap.from('.antque-left--text', {
+      scrollTrigger: {
+        trigger: '.antque-left--text',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 50,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+    gsap.from('.antique-right--text', {
+      scrollTrigger: {
+        trigger: '.antique-right--text',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 50,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+
+    let aUnderline = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.antique-underline',
+        toggleActions: 'restart pause none resume',
+
+      }
+    });
+
+    aUnderline.fromTo('.antique-underline',
+      {
+        width: "0%",
+        left: "0%",
+      }, {
+      width: "100%",
+      left: "100%",
+      duration: 2,
+      immediateRender: false
+    });
 
   }
 

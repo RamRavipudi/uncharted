@@ -1,0 +1,122 @@
+.container {
+  height: 100vh;
+  width: 100%;
+}
+.main-container {
+  background: #896249;
+  background-image: url(../../assets/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1400px;
+}
+.business-title {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54.463px;
+  line-height: 54px;
+
+  color: #ffffff;
+  transform: translate(0px, 12px);
+}
+.contact-form--first {
+  width: 100%;
+}
+.empty {
+  height: 12px;
+  margin: 12px;
+}
+h1 {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #f9f5ec;
+}
+.mat-raised-button {
+  font-family: Larken-Medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  width: 206px;
+  height: 52px;
+  background: #f7f6ef;
+  border: 1px solid #f7f6ef;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  color: #9c7760;
+}
+.mat-form-field {
+  width: 300px;
+  font-family: Larken-LightItalic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #f7f6ef;
+}
+.contact-form__first-title {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 140px;
+  line-height: 139px;
+
+  color: #f7f6ef;
+}
+.contact-form__second--text {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 140px;
+  line-height: 139px;
+
+  color: #f7f6ef;
+}
+.nav-menu {
+  background: #896249;
+  position: fixed;
+  width: 110%;
+  opacity: 1;
+  z-index: 1;
+}
+
+footer {
+  background-color: #896249;
+  height: 340px;
+}
+a {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #fff;
+}
+.mat-icon,
+.mat-label {
+  color: #f9f5ec;
+  font-size: 24px;
+}
+.footer-business--subtitle {
+  font-family: North Carossela;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #f9f5ec;
+}
+.contact-city {
+  width: 360px;
+}
