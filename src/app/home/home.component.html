@@ -73,7 +73,7 @@
     </section>
     <section class="materials" id='materials'>
         <div class="material-container">
-            <div class="material-container--title" fxLayout='row' fxLayoutAlign='center center'>
+            <div class="material-container--title" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column'>
                 <h1 class="material-container--title__text">
                     materials
                 </h1>
@@ -104,10 +104,10 @@
     </section>
 
     <section class="pro" id='pro'>
-        <div class="pro-container">
+        <div class="pro-container" >
 
-            <div class="pro-container--title" fxLayout='row' fxLayoutAlign='center center'>
-                <h1 class="pro-container--title__text">
+            <div class="pro-container--title" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column'>
+                <h1 class="pro-container--title__text" fxLayout.lt-md='row' fxLayoutAlign.lt-md='end center' fxFlex.lt-md='15' >
                     antiques of the future
                 </h1>
                 <img class='pro-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
@@ -126,17 +126,20 @@
                     </mat-carousel>
                 </div> -->
             </div>
-            <div class="antique-image--container" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap='24px'>
-                <div class="antique-leftImage" fxLayout='column' fxLayoutAlign='space-between center' fxLayoutGap='24px' >
-                    <img class='antique-left--image' src='../../assets/antique-left.png'>
+            <div class="antique-image--container" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap='24px' fxLayout.lt-md='column-reverse' fxLayoutAlign.lt-md='center center'>
+                <div class="antique-leftImage" fxLayout='column' fxLayoutAlign='space-between center' fxLayoutGap='24px'  fxLayout.lt-md='row-reverse' fxLayoutAlign.lt-md='space-between start'>
+                    <img class='antique-left--image' src='../../assets/antique-left.png' fxFlexOffset.lt-md='15'>
+
+                    <div class="antique-left--image__text--container" fxLayout.lt-md='column' fxLayoutAlign.lt-md='center stretch' >
                     <img class='antique-underline' src='../../assets/line1.png'>
-                    <h4 class="antque-left--text" fxLayout='column' fxLayoutAlign='center center'>
+                    <h4 class="antique-left--text" fxLayout='column' fxLayoutAlign='center center'>
                         This modern take on the classic empire style Selenite Chandelier. The look has the allure of restoration era luxury for interiors ranging from industrial to glamorous.
 
                     </h4>
                 </div>
+                </div>
 
-                <div class='antique-rightImage' >
+                <div class='antique-rightImage' fxLayout.lt-md='column' fxLayoutAlign.lt-md='center center' fxLayoutGap.lt-md='14px'>
                     <img class='antique-right--image' src='../../assets/antique-right.png'>
                     <h3 class="antique-right--text" fxLayout='row' fxLayoutAlign='center center'>
                         Selenite Chandeliers
@@ -148,7 +151,7 @@
     </section>
     <section class="work" id="work">
         <div class="work-container">
-            <div class="work-container--title" fxLayout='row' fxLayoutAlign='center center'>
+            <div class="work-container--title" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column' fxLayout.lt-md='center center'>
                 <h1 class="work-container--title__text">
                     projects
                 </h1>
