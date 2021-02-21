@@ -119,7 +119,9 @@
                 <img class='material-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
 
             </div>
-            <div class="material-main--container" fxLayout='column' fxLayoutAlign='center center' fxLayoutGap='12px'>
+            <div class="material-main--container" fxLayout='row' fxLayoutAlign='center center' fxLayoutGap='12px'>
+                <div class="material-left--lines">
+                </div>
                 <div class="material-container--carousel">
                     <div class="material-carousel" fxHide.lt-sm>
                         <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249"
@@ -132,6 +134,9 @@
                         </mat-carousel>
                         
                         
+                    </div>
+
+                    <div class="material-right--lines">
                     </div>
                     <div class="material-carousel" fxHide='true' fxShow.lt-sm>
                         <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249"
@@ -245,7 +250,7 @@
 
             </div>
 
-            <button mat-raised-button color="primary" matRipple matRippleCentered matRippleColor='#896249'
+            <button mat-raised-button color="primary" matRipple matRippleCentered matRippleColor='#896249' href='#contact-form'
                 matRippleRadius='1200' fxFlexOffset.lt-sm='15' class='contact-button' (click)="openContact()">GET IN TOUCH</button>
 
 

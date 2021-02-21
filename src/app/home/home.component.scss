@@ -339,6 +339,7 @@ video {
 
   background-position: translateY(-40px);
   background-repeat: no-repeat;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1200px) {
@@ -376,6 +377,15 @@ video {
 @media screen and (max-width: 600px) {
 }
 @media screen and (max-width: 300px) {
+}
+
+.material-left--lines{
+  background:url(../../assets/mat-left.png);
+  opacity:0.9;
+}
+.material-right--lines{
+  background:url(../../assets/mat-right.png);
+  opacity:0.9;
 }
 .material-carousel--text {
   font-family: North Carossela;

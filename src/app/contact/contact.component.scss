@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 1200px;
+  background-position-x: 30px;
 }
 .business-title {
   font-family: North Carossela;
@@ -113,6 +114,7 @@ address{
 
   color: #9c7760;
 }
+.mat-form-field-appearance-fill .mat-form-field-flex{background-color:none;}
 .mat-form-field {
   width: 300px;
   font-family: Larken-LightItalic;
@@ -120,6 +122,7 @@ address{
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  background-color: none;
 
   color: #f7f6ef;
 }

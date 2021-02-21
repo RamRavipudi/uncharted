@@ -172,19 +172,19 @@ export class HomeComponent implements OnInit {
 
     // contact animation
 
-    gsap.from('mat-carousel', {
+   
+
+    gsap.from('.contact-container--title__text', {
       scrollTrigger: {
-        trigger: 'section',
-        toggleActions: 'restart pause none resume',
+        trigger: '.contact',
+        toggleActions: 'restart resume none resume',
         // markers:true,
-        // scrub:true,
-        // pin:true,
       },
-      y: 300,
-      duration: 4,
+      y: 100,
+      duration: 2,
       ease: 'slow',
-
-
+      // scrub:true,
+      // pin:true
     });
 
 
@@ -221,6 +221,33 @@ export class HomeComponent implements OnInit {
       stagger: 1,
       delay: 2,
     });
+
+    gsap.from('.work-carousel', {
+      scrollTrigger: {
+        trigger: '.work',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+    gsap.from('.work-container--title__text', {
+      scrollTrigger: {
+        trigger: '.work',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
 
 
     // anique animations
@@ -297,6 +324,52 @@ export class HomeComponent implements OnInit {
       duration: 2,
       immediateRender: false
     });
+
+
+    gsap.from('.pro-container--title__text', {
+      scrollTrigger: {
+        trigger: '.pro',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+    // material animations
+
+    gsap.from('.material-carousel', {
+      scrollTrigger: {
+        trigger: '.materials',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+
+    gsap.from('.material-container--title__text', {
+      scrollTrigger: {
+        trigger: '.materials',
+        toggleActions: 'restart resume none resume',
+        // markers:true,
+      },
+      y: 100,
+      duration: 2,
+      ease: 'slow',
+      // scrub:true,
+      // pin:true
+    });
+
+
+
 
   }
 

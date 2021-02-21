@@ -1,4 +1,7 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import {Router, NavigationEnd, Scroll} from '@angular/router';
+import {filter} from 'rxjs/operators';
 
 @Component({
   selector: 'app-contact',
@@ -9,9 +12,18 @@ export class ContactComponent implements OnInit {
 
   panelOpenState=false;
 
-  constructor() { }
+  constructor(private router:Router, viewportScroller: ViewportScroller) { 
+    
+    
+  }
 
   ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0)
+  });
   }
 
 }
