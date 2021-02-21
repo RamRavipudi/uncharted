@@ -6,7 +6,7 @@
             <h2 class='business-title'>unCHARTED</h2>
 
         </div>
-        <div class='nav-items'>
+        <div  class='nav-items' >
 
 
             <a href='#home' mat-button>home</a>
@@ -16,12 +16,51 @@
             <a href='#pro' mat-button>pro</a>
             <a href='#contact' mat-button>contact</a>
 
+            
+
         </div>
+
+        
     </div>
 
+    <!-- <mat-drawer-container >
+        <mat-drawer #sidenav position='end'>
+        <a href='#home' mat-button>home</a>
+        <a href='#about' mat-button> about us</a>
+        <a href='#materials' mat-button>material</a>
+        <a href='#work' mat-button>work</a>
+        <a href='#pro' mat-button>pro</a>
+        <a href='#contact' mat-button>contact</a>
+
+    </mat-drawer>
+    </mat-drawer-container>
+
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm fxLayout='row' fxLayoutAlign='center center' fxFlex='140'>
+        <mat-icon >menu</mat-icon>
+    </button> -->
+
+    <!-- sidenav in mobile view -->
+
+  
+<!-- 
+    <mat-sidenav-container fxFlexFill>
+        <mat-sidenav #sidenav class='sidenav-header'>
+            <mat-nav-list>
+                <a href="#" [routerLink]="'/about'" routerLinkActive='active' mat-list-item>About us</a>
+                <a href="#" [routerLink]="'/resources'" routerLinkActive='active' mat-list-item>Resources</a>
+                <a href="#" [routerLink]="'/membership'" routerLinkActive='active' mat-list-item>MemberShip</a>
+                <a href="#" [routerLink]="'/training'" routerLinkActive='active' mat-list-item>Training</a>
+                <a href="#" [routerLink]="'/authentication'" routerLinkActive='active' mat-list-item>Login/Register</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+            <div>Nothing yet</div>
+        </mat-sidenav-content>
+    </mat-sidenav-container> -->
 
 
     <section class="home" id='home'>
+        
         <div class='bg-video'>
             <video class='video-content' autoplay muted loop preload="auto">
                 <source src='../../assets/videos/VID-20210215-WA0008.mp4' type='video/mp4'>
@@ -106,11 +145,11 @@
     <section class="pro" id='pro'>
         <div class="pro-container" >
 
-            <div class="pro-container--title" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column'>
-                <h1 class="pro-container--title__text" fxLayout.lt-md='row' fxLayoutAlign.lt-md='end center' fxFlex.lt-md='15' >
+            <div class="pro-container--title" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column' fxLayout.lt-sm='column'>
+                <h1 class="pro-container--title__text" fxLayout.lt-md='row' fxLayoutAlign.lt-md='end center' fxFlex.lt-md='15' fxLayout.lt-sm='row' fxLayoutAlign.lt-sm='end center' fxFlex.lt-sm='15'>
                     antiques of the future
                 </h1>
-                <img class='pro-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true'>
+                <img class='pro-text--underline' src='../../assets/Line 2.png' fxHide='true' fxShow.lt-md ='true' >
             </div>
             <div class="pro-container--carousel">
 

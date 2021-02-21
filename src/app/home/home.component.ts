@@ -252,9 +252,9 @@ export class HomeComponent implements OnInit {
     });
 
 
-    gsap.from('.antque-left--text', {
+    gsap.from('.antique-left--text', {
       scrollTrigger: {
-        trigger: '.antque-left--text',
+        trigger: '.antique-left--text',
         toggleActions: 'restart resume none resume',
         // markers:true,
       },

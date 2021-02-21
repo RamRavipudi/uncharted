@@ -455,9 +455,24 @@ video {
   font-family: "North Carossela";
   font-size: 100px;
   color: #896249;
+  margin-left:60px;
 }
 
+.pro-text--underline {
 
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+  .pro-text--underline {
+    width:80%;
+
+  }
+}
+@media screen and (max-width: 300px) {
+}
 
 @media screen and (max-width: 1200px) {
 }
@@ -604,7 +619,7 @@ video {
 @media screen and (max-width: 300px) {
 }
 .work-container {
-  transform: translateY(120px);
+  transform: translateY(400px);
 }
 
 @media screen and (max-width: 1200px) {
