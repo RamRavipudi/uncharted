@@ -23,7 +23,8 @@
 
     <div class="contact-form" fxLayout='column' fxLayoutAlign='space-between center'>
 
-      <div class="contact-form--first" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='15' fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='space-between center'>
+      <div class="contact-form--first" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='15'
+        fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='space-between center'>
 
 
 
@@ -79,24 +80,26 @@
         </div>
 
       </div>
-      <div class="contact-form--second" fxLayout='row' fxLayoutGap='180px' fxFlex='20' fxLayout.lt-sm='column'  fxLayoutGap.lt-md='100px' fxLayoutAlign='space-between center'
-        fxFlexOffset.lt-md='27' fxFlexOffset='15'>
+      <div class="contact-form--second" fxLayout='row' fxLayoutGap='180px' fxFlex='20' fxLayout.lt-sm='column'
+        fxLayoutGap.lt-md='100px' fxLayoutAlign='space-between center' fxFlexOffset.lt-md='27' fxFlexOffset='15'>
 
         <div class="contact-form__second--text" fxFlex='30'>
 
           <h1 class="contact-form__second--text">
-            unCHarted 
+            unCHarted
 
           </h1>
           <h1 class="contact-form__second--text">
-             EMBASsy
+            EMBASsy
 
           </h1>
-          
-        </div>
-        <div class="contact-form__second--fields" fxLayout='column' fxLayoutAlign='center start' fxFlex='30' fxFlex.lt-sm='10'
-          fxLayoutGap='24px'>
 
+        </div>
+        <div class="contact-form__second--fields" fxLayout='column' fxLayoutAlign='center start' fxFlex='30'
+          fxFlex.lt-sm='10' fxLayoutGap='24px'>
+
+         
+<!-- 
           <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
             <h1>unCHarted delhi</h1>
             <img class='drop-down' src='../../assets/expand-more.png'>
@@ -113,9 +116,9 @@
             <img class='drop-down' src='../../assets/expand-more.png'>
 
 
-          </div>
+          </div> -->
 
-          <!-- <mat-accordion>
+          <mat-accordion class='mat-elevation-z0'>
 
 
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -125,7 +128,9 @@
               </mat-panel-title>
 
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+            <address>Mehrauli, Delhi 110030, India,
+              + (91) 7487889790,
+              info@uncharted.com</address>
           </mat-expansion-panel>
 
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -135,7 +140,11 @@
               </mat-panel-title>
 
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+            <address>1071 BR Amsterdam, Netherlands,
+
+              + 31 787897991,
+              
+              info@uncharted.com</address>
           </mat-expansion-panel>
 
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -145,10 +154,14 @@
               </mat-panel-title>
 
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+            <address>4004 Westfield, Sydney NSW 2000, Australia,
+
+              + 61 7224270009,
+              
+              info@uncharted.com</address>
           </mat-expansion-panel>
 
-        </mat-accordion> -->
+        </mat-accordion>
         </div>
 
       </div>
@@ -158,7 +171,7 @@
   </div>
 
   <div class="empty">
-    <h1>home</h1>
+    <h1>.</h1>
   </div>
 
 

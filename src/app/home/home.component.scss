@@ -71,6 +71,12 @@ video {
   position: relative;
   height: 1000px;
   transform: translate(-200px, 0px);
+  background-image: url(../../assets/about-bg.png);
+  background-repeat: no-repeat;
+  background-position-y: 123px;
+  background-position-x: 40px;
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -83,13 +89,12 @@ video {
     position: relative;
     height: 1000px;
     transform: translate(40px, 0px);
+
   }
 }
 @media screen and (max-width: 300px) {
 }
 .about {
-  background-image: url(../../assets/lines-bg2.png);
-  background-repeat: no-repeat;
   transform: translate(0px, 148px);
   background-size: contain;
 }
@@ -288,6 +293,7 @@ video {
   height: 700px;
   width: 100%;
   transform: translate(30px, 220px);
+  z-index: -1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -345,8 +351,7 @@ video {
 }
 .material-container--carousel {
   width: 100%;
-  height: 500px;
-  margin-top: 60px;
+  height: 524px;
   opacity: 0.9;
 }
 
@@ -379,7 +384,7 @@ video {
   font-size: 29.882px;
   line-height: 30px;
   /* identical to box height */
-
+  margin-top:12px;
   color: #f1eae2;
 }
 
@@ -418,8 +423,10 @@ video {
 .pro-container {
   transform: translateY(420px);
   background: url(../../assets/antique-lines.png);
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: contain;
+  background-position-x: 30px;
+
 }
 
 
@@ -431,8 +438,9 @@ video {
   .pro-container {
     transform: translateY(120px);
     background: url(../../assets/antique-lines.png);
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-size: contain;
+    background-position-x: 30px;
   }
 }
 @media screen and (max-width: 300px) {
@@ -688,8 +696,9 @@ video {
   height: 1000px;
   background: url(../../assets/contact-lines.png);
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: -300px;
+  background-repeat: round;
+  background-position-y: -162px;
+  background-position-x:28px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -702,7 +711,7 @@ video {
     background: url(../../assets/contact-lines.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: -300px;
+    background-position-y: -162px;
   }
 }
 @media screen and (max-width: 300px) {
