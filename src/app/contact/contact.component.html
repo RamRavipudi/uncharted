@@ -1,108 +1,121 @@
 <div class="container">
 
   <div class="main-container">
-  <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center'>
-    <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
+    <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center' fxHide.lt-sm='true'>
+      <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
 
-      <img src='../../assets/business-logo.png' alt='logo'>
-      <h2 class='business-title'>unCHARTED</h2>
-
-    </div>
-    <div class='nav-items'>
-
-
-      <a href='#home' mat-button>home</a>
-      <a href='#about' mat-button> about us</a>
-      <a href='#materials' mat-button>material</a>
-      <a href='#work' mat-button>work</a>
-      <a href='#pro' mat-button>pro</a>
-      <a href='#contact' mat-button>contact</a>
-
-    </div>
-  </div>
-
-  <div class="contact-form" fxLayout='column' fxLayoutAlign='space-between center'>
-
-    <div class="contact-form--first" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='15'>
-
-
-
-      <div class="contact-form__first--text" fxFlex='30'>
-
-
-        <h1 class="contact-form__first-title">
-
-          Get in
-        </h1>
-        <h1 class='contact-form__first-title'>touch</h1>
-        
-       
+        <img src='../../assets/business-logo.png' alt='logo'>
+        <h2 class='business-title'>unCHARTED</h2>
 
       </div>
-
-      <div class="contact-form__first--fileds" fxFlex='30'>
-
-        <form action="" class="contact-form" fxLayout='column' fxLayoutAlign='space-around center' fxLayoutGap='32px'>
-
-          <mat-form-field appearance='fill'>
-
-            <mat-label>FULL NAME</mat-label>
-            <input matInput>
-            
-          </mat-form-field>
-          <mat-form-field appearance='fill'>
-
-            <mat-label>E-MAIL ADDRESS</mat-label>
-            <input matInput>
-            
-          </mat-form-field>
-          <mat-form-field appearance='fill'>
-
-            <mat-label>PHONE</mat-label>
-            <input matInput>
-            
-          </mat-form-field>
-          <mat-form-field appearance='fill'>
-
-            <mat-label>MESSAGE</mat-label>
-            <input matInput>
-            
-          </mat-form-field>
+      <div class='nav-items'>
 
 
-          <button mat-raised-button>SUBMIT</button>
-
-        </form>
+        <a href='#home' mat-button>home</a>
+        <a href='#about' mat-button> about us</a>
+        <a href='#materials' mat-button>material</a>
+        <a href='#work' mat-button>work</a>
+        <a href='#pro' mat-button>pro</a>
+        <a href='#contact' mat-button>contact</a>
 
       </div>
-
     </div>
-    <div class="contact-form--second" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='27'>
 
-      <div class="contact-form__second--text" fxFlex='30'>
-        unCHarted EMBASsy
-      </div>
-      <div class="contact-form__second--fields" fxLayout='column' fxLayoutAlign='center start' fxFlex='30' fxLayoutGap='24px'>
+    <div class="contact-form" fxLayout='column' fxLayoutAlign='space-between center'>
 
-        <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
-          <h1>unCHarted delhi</h1>
-          <img class='drop-down' src='../../assets/expand-more.png'>
-        </div>
-        <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
-          <h1>unCHarted amsterdam</h1>
-          <img class='drop-down' src='../../assets/expand-more.png'>
+      <div class="contact-form--first" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='15' fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='space-between center'>
 
-        </div>
 
-        <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
 
-          <h1>unCHarted sydney</h1>
-          <img class='drop-down' src='../../assets/expand-more.png'>
+        <div class="contact-form__first--text" fxFlex='30' fxLayout.lt-sm='row'>
+
+
+          <h1 class="contact-form__first-title">
+
+            Get in
+          </h1>
+
+          <br>
+          <h1 class='contact-form__first-title'>touch</h1>
+
 
 
         </div>
 
-        <!-- <mat-accordion>
+        <div class="contact-form__first--fileds" fxFlex='30' fxFlex.lt-sm='10'>
+
+          <form action="" class="contact-form" fxLayout='column' fxLayoutAlign='space-around center' fxLayoutGap='32px'>
+
+            <mat-form-field appearance='fill'>
+
+              <mat-label>FULL NAME</mat-label>
+              <input matInput>
+
+            </mat-form-field>
+            <mat-form-field appearance='fill'>
+
+              <mat-label>E-MAIL ADDRESS</mat-label>
+              <input matInput>
+
+            </mat-form-field>
+            <mat-form-field appearance='fill'>
+
+              <mat-label>PHONE</mat-label>
+              <input matInput>
+
+            </mat-form-field>
+            <mat-form-field appearance='fill'>
+
+              <mat-label>MESSAGE</mat-label>
+              <input matInput>
+
+            </mat-form-field>
+
+
+            <button mat-raised-button>SUBMIT</button>
+
+          </form>
+
+        </div>
+
+      </div>
+      <div class="contact-form--second" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxLayout.lt-sm='column'  fxLayoutGap.lt-md='100px' fxLayoutAlign='space-between center'
+        fxFlexOffset='27'>
+
+        <div class="contact-form__second--text" fxFlex='30'>
+
+          <h1 class="contact-form__second--text">
+            unCHarted 
+
+          </h1>
+          <h1 class="contact-form__second--text">
+             EMBASsy
+
+          </h1>
+          
+        </div>
+        <div class="contact-form__second--fields" fxLayout='column' fxLayoutAlign='center start' fxFlex='30' fxFlex.lt-sm='10'
+          fxLayoutGap='24px'>
+
+          <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
+            <h1>unCHarted delhi</h1>
+            <img class='drop-down' src='../../assets/expand-more.png'>
+          </div>
+          <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
+            <h1>unCHarted amsterdam</h1>
+            <img class='drop-down' src='../../assets/expand-more.png'>
+
+          </div>
+
+          <div class="contact-city" fxLayout='row' fxLayoutAlign='space-between start'>
+
+            <h1>unCHarted sydney</h1>
+            <img class='drop-down' src='../../assets/expand-more.png'>
+
+
+          </div>
+
+          <!-- <mat-accordion>
 
 
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -136,26 +149,30 @@
           </mat-expansion-panel>
 
         </mat-accordion> -->
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</div>
+  <div class="empty">
+    <h1>home</h1>
+  </div>
 
-<div class="empty"><h1>home</h1></div>
 
-
-  <footer fxLayout='row' fxLayoutAlign='start center'>
-    <div class="footer-container" fxFlexOffset='15'>
+  <footer fxLayout='row' fxLayoutAlign='start center' fxLayout.lt-md='column' fxLayoutAlign.lt-md='space-around center'>
+    <div class="footer-container" fxFlexOffset='15' fxLayout.lt-md='column' fxLayoutAlign.lt-md='space-around center'>
       <div class="footer-logo" fxLayout='column' fxLayoutAlign='space-around center' fxFlex='30'>
 
-        <div class="footer-logo--image"> <img src='../../assets/footer-logo.png'>
+        <div class="footer-logo--image"> <img src='../../assets/footer-logo.png' fxHide.lt-md='true'>
         </div>
 
         <div class="footer-logo--text" fxLayout='column' fxLayoutAlign='center center'>
-          <h2 class='business-title'>unCHarted</h2>
+          <h2 class='business-title' fxHide.lt-md='true'>unCHarted</h2>
+          <img src='../../assets/footer-Mlogo.png' fxHide='true' fxShow.lt-md='true'>
+
           <h2 class='footer-business--subtitle'>ACCESS TO INDIVIDUALITY</h2>
         </div>
 
@@ -164,7 +181,7 @@
 
     </div>
 
-    <img class="divider-line" src='../../assets/divider.png' alt='divider'>
+    <img class="divider-line" src='../../assets/divider.png' alt='divider' fxHide.lt-md='true'>
     <div class="footer-items" fxLayout='column' fxLayoutAlign='space-evenly center' fxFlex='40'>
       <a href='#home' mat-button>home</a>
       <a href='#about' mat-button> about us</a>
@@ -173,7 +190,7 @@
       <a href='#pro' mat-button>pro</a>
       <a href='#contact' mat-button>contact</a>
     </div>
-    <img class="divider-line" src='../../assets/divider.png' alt='divider'>
+    <img class="divider-line" src='../../assets/divider.png' alt='divider' fxHide.lt-md='true'>
 
   </footer>
 </div>

@@ -1,4 +1,3 @@
-@import "../../mediaquries.scss";
 
 @font-face {
   font-family: "North-Carossela";
@@ -125,7 +124,7 @@ video {
 }
 @media screen and (max-width: 600px) {
   .about-illustration {
-    transform: translate(70px, -180px);
+    transform: translate(14px, -180px);
   }
 }
 @media screen and (max-width: 300px) {
@@ -151,15 +150,15 @@ video {
 @media screen and (max-width: 600px) {
   .background-card {
     height: 220px;
-    width: 260px;
-    position: absolute;
-    transform: translate(140px, 25px);
+    width: 280px;
+    position: relative;
+    transform: translate(10px, 25px);
   }
 }
 @media screen and (max-width: 300px) {
   .background-card {
     height: 220px;
-    width: 300px;
+    width: 280px;
   }
 }
 .image-card {
@@ -181,13 +180,14 @@ video {
 }
 @media screen and (max-width: 600px) {
   .image-card {
-    width: 300px;
+    width: 280px;
     height: 220px;
+    transform:translate(-12px , 0px);
   }
 }
 @media screen and (max-width: 300px) {
   .image-card {
-    width: 300px;
+    width: 280px;
     height: 220px;
   }
 }
@@ -494,6 +494,7 @@ video {
     line-height: 16px;
     text-align: center;
     transform: translate(-100px);
+    // margin-left:100px;
     color: #f7f6ef;
   }
 }

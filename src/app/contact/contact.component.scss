@@ -7,7 +7,7 @@
   background-image: url(../../assets/contact-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1400px;
+  height: 1200px;
 }
 .business-title {
   font-family: North Carossela;
@@ -36,6 +36,26 @@ h1 {
 
   color: #f9f5ec;
 }
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-family: North Carossela;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  
+    color: #f9f5ec;
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
 .mat-raised-button {
   font-family: Larken-Medium;
   font-style: normal;
@@ -62,6 +82,27 @@ h1 {
 
   color: #f7f6ef;
 }
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+
+  .mat-form-field {
+    width: 240px;
+    font-family: Larken-LightItalic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  
+    color: #f7f6ef;
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
 .contact-form__first-title {
   font-family: North Carossela;
   font-style: normal;
@@ -71,6 +112,51 @@ h1 {
 
   color: #f7f6ef;
 }
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+
+  .contact-form__first-title {
+    font-family: North Carossela;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+  
+    color: #f7f6ef;
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
+.contact-form--second{
+
+  
+
+}
+
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+
+  .contact-form--second{
+
+    background: url(../../assets/contact-Msecond.png);
+    background-repeat: round;
+    background-size: cover;
+  
+
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
 .contact-form__second--text {
   font-family: North Carossela;
   font-style: normal;
@@ -80,6 +166,25 @@ h1 {
 
   color: #f7f6ef;
 }
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+
+  .contact-form__second--text {
+    font-family: North Carossela;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    color: #f7f6ef;
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
 .nav-menu {
   background: #896249;
   position: fixed;
@@ -91,6 +196,21 @@ h1 {
 footer {
   background-color: #896249;
   height: 340px;
+}
+
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+
+  footer {
+    background-color: #896249;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 300px) {
 }
 a {
   font-family: North Carossela;
@@ -119,4 +239,27 @@ a {
 }
 .contact-city {
   width: 360px;
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+  .contact-city {
+    width: 300px;
+    font-size:24px;
+  }
+}
+@media screen and (max-width: 300px) {
+}
+
+
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 300px) {
 }
