@@ -62,7 +62,7 @@
     <section class="home" id='home'>
         
         <div class='bg-video'>
-            <video class='video-content' autoplay muted loop preload="auto">
+            <video class='video-content' autoplay muted loop preload="auto" poster='../../assets/video-back.png'>
                 <source src='../../assets/videos/VID-20210215-WA0008.mp4' type='video/mp4'>
 
             </video>
@@ -125,7 +125,7 @@
                 <div class="material-container--carousel">
                     <div class="material-carousel" fxHide.lt-sm>
                         <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249"
-                            maxWidth='1200px' slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
+                            maxWidth='800px' slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
                             [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
                             [useMouseWheel]="false" orientation="ltr">
                             <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"
