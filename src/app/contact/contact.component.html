@@ -1,8 +1,8 @@
 <div class="container">
 
   <div class="main-container">
-    <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center' fxHide.lt-sm='true'>
-      <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
+    <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-evenly center' fxHide.lt-sm='true'>
+      <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px' fxFlexOffset='-10'>
 
         <img src='../../assets/business-logo.png' alt='logo'>
         <h2 class='business-title'>unCHARTED</h2>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="contact-form" fxLayout='column' fxLayoutAlign='space-between center'>
+    <div class="contact-form" fxLayout='column' fxLayoutAlign='center center'>
 
       <div class="contact-form--first" fxLayout='row' fxLayoutAlign='space-around center' fxFlex='30' fxFlexOffset='15'
         fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='space-between center'>
@@ -118,7 +118,7 @@
 
           </div> -->
 
-          <mat-accordion class='mat-elevation-z0'>
+          <mat-accordion class='mat-elevation-z0' fxLayout='column' fxLayoutAlign='space-between center'>
 
 
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">

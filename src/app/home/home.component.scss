@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "North-Carossela";
   src: url("../../assets/North\ Carossela\ 400.otf");
@@ -49,8 +48,8 @@ video {
   font-family: North Carossela;
   font-style: normal;
   font-weight: normal;
-  font-size: 54.463px;
-  line-height: 54px;
+  font-size: 36px;
+  line-height: 36px;
 
   color: #ffffff;
   transform: translate(0px, 12px);
@@ -72,11 +71,9 @@ video {
   height: 1000px;
   transform: translate(-200px, 0px);
   background-image: url(../../assets/about-bg.png);
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-position-y: 123px;
-  background-position-x: 40px;
-
-
+  background-position-x: 11px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,7 +86,6 @@ video {
     position: relative;
     height: 1000px;
     transform: translate(40px, 0px);
-
   }
 }
 @media screen and (max-width: 300px) {
@@ -187,7 +183,7 @@ video {
   .image-card {
     width: 280px;
     height: 220px;
-    transform:translate(-12px , 0px);
+    transform: translate(-12px, 0px);
   }
 }
 @media screen and (max-width: 300px) {
@@ -244,6 +240,13 @@ video {
 }
 
 .about-text-paragraph {
+  font-family: Larken-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+
+  color: #896249;
 }
 
 @media screen and (max-width: 1200px) {
@@ -306,11 +309,9 @@ video {
     width: 100%;
     transform: translate(10px, -140px);
   }
-
 }
 @media screen and (max-width: 300px) {
 }
-
 
 .material-container--title__text {
   font-family: "North Carossela";
@@ -323,13 +324,11 @@ video {
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-
-
-.material-container--title__text {
-  font-family: "North Carossela";
-  font-size: 48px;
-  color: #896249;
-}
+  .material-container--title__text {
+    font-family: "North Carossela";
+    font-size: 48px;
+    color: #896249;
+  }
 }
 @media screen and (max-width: 300px) {
 }
@@ -337,10 +336,10 @@ video {
 .material-main--container {
   background: #896249;
 
-  background-image:url(../../assets/mat-left.png);
+  background-image: url(../../assets/mat-left.png);
   background-position-x: -20%;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   opacity: 0.9;
 }
 
@@ -357,10 +356,9 @@ video {
   height: 100%;
   opacity: 0.9;
   background-image: url(../../assets/mat-right.png);
-  background-repeat:no-repeat;
-  background-position-x:90%;
-  background-size:contain;
-
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: contain;
 }
 
 @media screen and (max-width: 1200px) {
@@ -384,13 +382,13 @@ video {
 @media screen and (max-width: 300px) {
 }
 
-.material-left--lines{
-  background-image:url(../../assets/mat-left.png);
-  opacity:0.9;
+.material-left--lines {
+  background-image: url(../../assets/mat-left.png);
+  opacity: 0.9;
 }
-.material-right--lines{
-  background-image:url(../../assets/mat-right.png);
-  opacity:0.9;
+.material-right--lines {
+  background-image: url(../../assets/mat-right.png);
+  opacity: 0.9;
 }
 .material-carousel--text {
   font-family: North Carossela;
@@ -399,7 +397,7 @@ video {
   font-size: 29.882px;
   line-height: 30px;
   /* identical to box height */
-  margin-top:12px;
+  margin-top: 12px;
   color: #f1eae2;
 }
 
@@ -441,9 +439,7 @@ video {
   background-repeat: round;
   background-size: cover;
   background-position-x: 30px;
-
 }
-
 
 @media screen and (max-width: 1200px) {
 }
@@ -461,7 +457,6 @@ video {
 @media screen and (max-width: 300px) {
 }
 
-
 .pro-carousel {
   margin: 12px 120px 0px 120px;
 }
@@ -478,11 +473,10 @@ video {
   font-family: "North Carossela";
   font-size: 100px;
   color: #896249;
-  margin-left:60px;
+  margin-left: 60px;
 }
 
 .pro-text--underline {
-
 }
 @media screen and (max-width: 1200px) {
 }
@@ -490,8 +484,7 @@ video {
 }
 @media screen and (max-width: 600px) {
   .pro-text--underline {
-    width:80%;
-
+    width: 80%;
   }
 }
 @media screen and (max-width: 300px) {
@@ -508,17 +501,15 @@ video {
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
-    
-    color: #9C7760;
+
+    color: #9c7760;
   }
 }
 @media screen and (max-width: 300px) {
 }
 
-
 .antique-leftImage {
   width: 280px;
-  margin-top: 60px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -526,8 +517,6 @@ video {
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-
- 
 }
 @media screen and (max-width: 300px) {
 }
@@ -546,13 +535,11 @@ video {
     width: 160px;
     height: 200px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transform:translate(24px, 0px);
+    transform: translate(24px, 0px);
   }
 }
 @media screen and (max-width: 300px) {
 }
-
-
 
 .antique-left--text {
   font-family: Larken-Light;
@@ -573,16 +560,14 @@ video {
 @media screen and (max-width: 300px) {
 }
 
-.antique-left--image__text--container{
-
+.antique-left--image__text--container {
 }
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-  .antique-left--image__text--container{
-
+  .antique-left--image__text--container {
   }
 }
 @media screen and (max-width: 300px) {
@@ -598,12 +583,11 @@ video {
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-
   .antique-right--image {
     width: 80%;
     height: 70%;
     margin-top: 52px;
-    margin-left:20px;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 300px) {
@@ -686,7 +670,7 @@ video {
 }
 
 .work-button {
-  transform: translateY(480px);
+  transform: translateY(400px);
   font-size: 14px;
   height: 52px;
   width: 148px;
@@ -711,9 +695,9 @@ video {
   height: 1000px;
   background: url(../../assets/contact-lines.png);
   background-size: contain;
-  background-repeat: round;
-  background-position-y: -162px;
-  background-position-x:28px;
+  background-repeat: no-repeat;
+  background-position-y: -620px;
+  // background-position-x: 28px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -726,7 +710,7 @@ video {
     background: url(../../assets/contact-lines.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: -162px;
+    background-position-y: -262px;
   }
 }
 @media screen and (max-width: 300px) {
@@ -756,9 +740,8 @@ video {
 @media screen and (max-width: 300px) {
 }
 
-.business-logo{
+.business-logo {
   width: 100%;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -766,28 +749,27 @@ video {
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-
-  .business-logo{
+  .business-logo {
     width: 100%;
-  
   }
-  
 }
 @media screen and (max-width: 300px) {
 }
 
 .contact-button {
-  width: 440px;
-  height: 100px;
+  width: 220px;
+  height: 66px;
   border: 1px solid #9c7760;
   box-sizing: border-box;
   border-radius: 40px;
   font-family: Larken-Medium;
   font-style: normal;
   font-weight: normal;
-  font-size: 27px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
+
+  color: #f7f6ef;
   // transform:translate(0px 76px);
   color: #f7f6ef;
   margin-top: 76px;
@@ -804,8 +786,8 @@ video {
     border: 1px solid #9c7760;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 180px;
-    height: 46px;
+    width: 120px;
+    height: 32px;
     font-family: Larken-Medium;
     font-style: normal;
     font-weight: normal;
@@ -820,8 +802,8 @@ video {
 @media screen and (max-width: 300px) {
 }
 
-.contact-text--underline{
-  width:80%;
+.contact-text--underline {
+  width: 80%;
 }
 
 footer {
@@ -834,13 +816,12 @@ footer {
 @media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 600px) {
-
   footer {
     background-color: #896249;
     height: 560px;
-    background-image:url(../../assets/footer-Mbg.png);
-    background-size:cover;
-    background-repeat:round;
+    background-image: url(../../assets/footer-Mbg.png);
+    background-size: cover;
+    background-repeat: round;
   }
 }
 @media screen and (max-width: 300px) {

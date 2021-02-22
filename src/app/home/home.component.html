@@ -1,6 +1,6 @@
 <div class='container'>
     <div class='nav-menu' fxLayout='row' fxLayoutAlign='space-around center' fxHide.lt-md='true'>
-        <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='30' fxLayoutGap='20px'>
+        <div class='business-logo' fxLayout='row' fxLayoutAlign='start center' fxFlex='20' fxFlexOffset='-10' fxLayoutGap='20px'>
 
             <img  href='#home' src='../../assets/business-logo.png' alt='logo'>
             <h2 href='#home' class='business-title'>unCHARTED</h2>
@@ -78,7 +78,7 @@
 
 
     <section class="about" id='about'>
-        <div class="about-container" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column-reverse' fxLayoutAlign.lt-md='center center' fxLayout.lt-sm='column-reverse' fxLayoutAlign.lt-sm='center start'>
+        <div class="about-container" fxLayout='row' fxLayoutAlign='center center' fxLayout.lt-md='column-reverse' fxLayoutAlign.lt-md='center center' fxLayout.lt-sm='column-reverse' fxLayoutAlign.lt-sm='center start' fxLayoutGap='52px'>
             <div class="about-illustration" fxLayout='row' fxLayoutAlign='center center' fxFlex='50' fxLayout.lt-sm='column' fxLayoutAlign.lt-sm='center center'>
 
 
@@ -96,10 +96,7 @@
 
                 <div class="about-text-paragraph" fxLayout.lt-sm='row' fxLayoutAlign.lt-sm='start center'>
                     <p class="about-text-paragraph">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti saepe tempora incidunt eius,
-                        in pariatur at accusantium error ut deserunt dicta ratione magnam voluptatem
-                        reiciendis sequi dolore quas aliquid repudiandae?
+                        Uncharted is the path we take to seek new inspirations, materials,craftsmen, collections, business partnerships interiors etc.Creativity is born spontaneously with the help of creative minds,inspiring materials, crafts and the interaction/connectionbetween people.
                     </p>
 
                 </div>
@@ -125,7 +122,7 @@
                 <div class="material-container--carousel">
                     <div class="material-carousel" fxHide.lt-sm>
                         <mat-carousel timings="700ms ease-in" [autoplay]="true" interval="4000" color="#896249"
-                            maxWidth='800px' slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
+                            maxWidth='1400px' slideHeight='600px' maintainAspectRatio="false" proportion="70" slides="5"
                             [loop]="true" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true"
                             [useMouseWheel]="false" orientation="ltr">
                             <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index"

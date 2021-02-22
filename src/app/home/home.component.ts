@@ -4,6 +4,7 @@ import Draggable from "gsap/Draggable";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MatDialog } from '@angular/material/dialog'
 import { Router } from '@angular/router';
+import {TweenMax} from 'gsap';
 
 
 
@@ -72,24 +73,46 @@ export class HomeComponent implements OnInit {
     gsap.from('.image-card', {
 
       scrollTrigger: {
-        trigger: '.image-card',
+        trigger: '.background-card',
         // markers:true,
-        toggleActions: 'restart resume none resume'
+        toggleActions: 'restart none none none'
 
       },
-      y: 100,
       duration: 2,
-      ease: 'slow',
+      y:100,
+      yoyo:true,
+      ease: 'power4',
     });
+
+    // let image = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: '.image-card',
+    //     toggleActions: 'restart pause none resume',
+
+    //   }
+    // });
+
+    // image.fromTo('.image-card',
+    //   {
+    //     height: "0%",
+    //     bottom: "0%",
+    //   }, {
+    //   height: "40%",
+    //   bottom: "0%",
+    //   duration: 1,
+    //   immediateRender: false
+    // });
+
+    // TweenMax.to('.image-card', 1, {scaleY:1});
 
     gsap.from('.background-card', {
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart resume none resume'
+        toggleActions: 'restart none none none'
       },
-      y: 200,
-      duration: 2,
-      ease: 'slow',
+      y: 100,
+      duration: 1.5,
+      ease: 'power4',
       // scrub:true,
       // pin:'.about-container',
       // pinSpacing:false
@@ -103,7 +126,7 @@ export class HomeComponent implements OnInit {
         // markers:true,
       },
       y: 50,
-      duration: 2,
+      duration: 1.5,
       ease: 'slow',
       // scrub:true,
       // pin:true
@@ -125,7 +148,7 @@ export class HomeComponent implements OnInit {
       }, {
       width: "80%",
       left: "100%",
-      duration: 2,
+      duration: 3,
       immediateRender: false
     })
 
@@ -163,10 +186,7 @@ export class HomeComponent implements OnInit {
         // pin:true,
       },
       y: 100,
-      duration: 2,
-      ease: 'slow',
-      stagger: 1,
-      delay: 2,
+      duration: 1.5,
     });
 
 
