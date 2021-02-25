@@ -13,6 +13,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ContactComponent } from './contact/contact.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
+import { NothingComponent } from './nothing/nothing.component';
+import * as AOS from 'aos';
 
 
 
@@ -20,7 +22,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    NothingComponent
   ],
   imports: [
     BrowserModule,

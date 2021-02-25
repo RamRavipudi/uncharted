@@ -24,6 +24,8 @@
     "@angular/router": "~9.1.11",
     "@angular/service-worker": "~9.1.11",
     "@ngmodule/material-carousel": "^0.6.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "gsap": "^3.6.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

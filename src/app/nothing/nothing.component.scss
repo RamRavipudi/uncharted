@@ -1,0 +1,22 @@
+.wrapper {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  // .holder {
+  //   overflow: hidden;
+  //   img {
+  //     display: block;
+  //     object-fit: cover;
+  //     width: 100%;
+  //   }
+  // }
+  .btn {
+    position: absolute;
+    left: 450px;
+    background: red;
+    font-size: 20px;
+    top: 100px;
+    color: #fff;
+  }

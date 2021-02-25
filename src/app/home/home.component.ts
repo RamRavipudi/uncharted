@@ -4,7 +4,9 @@ import Draggable from "gsap/Draggable";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MatDialog } from '@angular/material/dialog'
 import { Router } from '@angular/router';
-import {TweenMax} from 'gsap';
+import { TweenMax } from 'gsap';
+import {TimelineMax} from 'gsap';
+import SplitText from 'gsap';
 
 
 
@@ -48,97 +50,140 @@ export class HomeComponent implements OnInit {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    // gsap.to('.onload-image', {
-    //   scrollTrigger: {
 
-    //     trigger: '.onload-image',
-    //     toggleActions: 'restart resume restart pause',
-    //     onEnter: () => { gsap.set('.onload-image', { opacity: 1 }) },
 
-    //     onLeave: () => { gsap.set('.onload-image', { opacity: 0 }) }
 
-    //   },
-    //   y: 200,
-    //   x: -400,
-    //   scale: 14,
-    //   duration: 2,
-    //   ease: 'sine',
-    //   opacity: 0,
-    //   color: '#896249'
+//     var tl1 = new TimelineMax;
 
-    // });
+// tl1.from('.holder', {y:100, duration:2.5, ease: 'Power2.easeOut'}, 0.5)
+// .from('#about-illustration', {y:-100, duration:2.5, ease: 'Power2.easeOut'}, 0.5);
 
-    // about animation
 
-    gsap.from('.image-card', {
-
+    let illu = gsap.timeline({
       scrollTrigger: {
-        trigger: '.background-card',
-        // markers:true,
-        toggleActions: 'restart none none none'
+        trigger: '.holder',
+        toggleActions: 'restart none none  restart',
 
       },
-      duration: 2,
-      y:100,
-      yoyo:true,
-      ease: 'power4',
     });
+    
 
-    // let image = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: '.image-card',
-    //     toggleActions: 'restart pause none resume',
+    illu.fromTo('.holder',
+    {
+      yPercent:100,
 
-    //   }
-    // });
+    },{
+        yPercent:0,
+        duration:5,
+       
+        
+ 
+    }
+   ).fromTo('#about-illustration',{
+    //  yPercent:-100,
 
-    // image.fromTo('.image-card',
-    //   {
-    //     height: "0%",
-    //     bottom: "0%",
-    //   }, {
-    //   height: "40%",
-    //   bottom: "0%",
-    //   duration: 1,
-    //   immediateRender: false
-    // });
+    height:'7%',
+    bottom:'100%'
 
-    // TweenMax.to('.image-card', 1, {scaleY:1});
+   },{
+      height:'100%',
+      bottom:'0%',
+       duration:5,
+       ease:'slow'
+      
+       
+       
 
-    gsap.from('.background-card', {
+   },
+   "<").reverse();
+
+
+  //  
+
+  let rightImage = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.antique-rightImage',
+      toggleActions: 'restart none none  none',
+
+    },
+  });
+  
+
+  rightImage.fromTo('.antique-rightImage',
+  {
+    yPercent:100,
+
+  },{
+      yPercent:0,
+      duration:5,
+     
+      
+
+  }
+ ).fromTo('.antique-holder',{
+  //  yPercent:-100,
+
+  height:'7%',
+  bottom:'100%'
+
+ },{
+    height:'100%',
+    bottom:'0%',
+     duration:5,
+     ease:'slow'
+  
+ },
+ "<").reverse();
+
+    // 
+
+    let work = gsap.timeline({
       scrollTrigger: {
-        trigger: '.background-card',
-        toggleActions: 'restart none none none'
-      },
-      y: 100,
-      duration: 1.5,
-      ease: 'power4',
-      // scrub:true,
-      // pin:'.about-container',
-      // pinSpacing:false
-    });
+        trigger: '.work-carousel',
+        toggleActions: 'restart none none  restart',
 
-
-    gsap.from('.about-text', {
-      scrollTrigger: {
-        trigger: '.background-card',
-        toggleActions: 'restart resume none resume',
-        // markers:true,
       },
-      y: 50,
-      duration: 1.5,
-      ease: 'slow',
-      // scrub:true,
-      // pin:true
     });
+    
+
+    work.fromTo('.work-carousel',
+    {
+      yPercent:100,
+
+    },{
+        yPercent:0,
+        duration:5,
+       
+        
+ 
+    }
+   ).fromTo('.carousel-holder',{
+    //  yPercent:-100,
+
+    height:'7%',
+    bottom:'100%'
+
+   },{
+      height:'100%',
+      bottom:'0%',
+       duration:5,
+       ease:'slow'
+      
+       
+       
+
+   },
+   "<").reverse();
+  
+  
 
 
     let underline = gsap.timeline({
       scrollTrigger: {
         trigger: '.background-card',
-        toggleActions: 'restart pause none resume',
+        toggleActions: 'restart none none none',
 
-      }
+      },
     });
 
     underline.fromTo('.about-text--underline',
@@ -176,23 +221,39 @@ export class HomeComponent implements OnInit {
     //   // pin:true
     // });
 
+// const titleSplit = new SplitText('h1',{
+//     type:"lines",
+//     linesClass:"split-child"
+// });
 
-    gsap.from('.about-button', {
-      scrollTrigger: {
-        trigger: '.background-card',
-        toggleActions: 'restart pause none resume',
-        // markers:true,
-        // scrub:true,
-        // pin:true,
-      },
-      y: 100,
-      duration: 1.5,
-    });
+// const parentSplit = new SplitText('h1', {
+//   linesClass:'split-parent'
+// });
+
+// gsap.from(titleSplit.lines,{
+//   duration:1.5,
+//   yPercent:100,
+//   ease:"power4",
+//   stagger:0.1
+// });
+
+
+    // gsap.from('.about-button', {
+    //   scrollTrigger: {
+    //     trigger: '.background-card',
+    //     toggleActions: 'restart pause none resume',
+    //     // markers:true,
+    //     // scrub:true,
+    //     // pin:true,
+    //   },
+    //   y: 100,
+    //   duration: 1.5,
+    // });
 
 
     // contact animation
 
-   
+
 
     gsap.from('.contact-container--title__text', {
       scrollTrigger: {
@@ -211,15 +272,14 @@ export class HomeComponent implements OnInit {
     gsap.from('.contact-button', {
       scrollTrigger: {
         trigger: '.contact-button',
-        toggleActions: 'restart pause none resume',
+        toggleActions: 'play none none none',
         // markers:true,
         // scrub:true,
         // pin:true,
       },
       y: 100,
-      duration: 2,
-      ease: 'slow',
-      stagger: 1,
+      duration: 1,
+      ease: 'power4.easeOut',
       delay: 2,
     });
 
@@ -236,7 +296,7 @@ export class HomeComponent implements OnInit {
         // pin:true,
       },
       y: 600,
-      duration: 2,
+      duration: 12,
       ease: 'slow',
       stagger: 1,
       delay: 2,
@@ -270,7 +330,7 @@ export class HomeComponent implements OnInit {
 
 
 
-    // anique animations
+    // antique animations
 
     gsap.from('.antique-left--image', {
 
@@ -285,18 +345,9 @@ export class HomeComponent implements OnInit {
       ease: 'slow',
     });
 
-    gsap.from('.antique-right--image', {
-      scrollTrigger: {
-        trigger: '.antique-right--image',
-        toggleActions: 'restart resume none resume'
-      },
-      y: 200,
-      duration: 2,
-      ease: 'slow',
-      // scrub:true,
-      // pin:'.about-container',
-      // pinSpacing:false
-    });
+   
+
+    
 
 
     gsap.from('.antique-left--text', {
@@ -361,29 +412,54 @@ export class HomeComponent implements OnInit {
 
     // material animations
 
-    gsap.from('.material-carousel', {
-      scrollTrigger: {
-        trigger: '.materials',
-        toggleActions: 'restart resume none resume',
-        // markers:true,
-      },
-      y: 100,
-      duration: 2,
-      ease: 'slow',
-      // scrub:true,
-      // pin:true
-    });
+  //   let carousel = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: '.material-container--carousel',
+  //       toggleActions: 'restart none none  none',
 
+  //     },
+  //   });
+    
+
+  //   carousel.fromTo('.material-container--carousel',
+  //   {
+  //     yPercent:100,
+
+  //   },{
+  //       yPercent:0,
+  //       duration:5,
+       
+        
+ 
+  //   }
+  //  ).fromTo('.material-carousel',{
+  //   //  yPercent:-100,
+
+  //   height:'7%',
+  //   bottom:'100%'
+
+  //  },{
+  //     height:'100%',
+  //     bottom:'0%',
+  //      duration:5,
+  //      ease:'slow'
+      
+       
+       
+
+  //  },
+  //  "<").reverse();
 
     gsap.from('.material-container--title__text', {
       scrollTrigger: {
         trigger: '.materials',
-        toggleActions: 'restart resume none resume',
+        toggleActions: 'restart none none none',
         // markers:true,
       },
       y: 100,
       duration: 2,
-      ease: 'slow',
+      ease: 'power4.easeOut',
+
       // scrub:true,
       // pin:true
     });
